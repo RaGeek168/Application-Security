@@ -109,7 +109,7 @@ Description: This checklist will help security analyst/consultants to test their
 - Check for Reflected XSS using scanner, manual process using burp repeater
 - Bypass XSS filter using OWASP XSS filter evasion cheatsheet
 - Try Blind/Boolean/Error based SQL injection
-- Find red, redirect, origin type of parameters and change their value to www.testinsane.com. Check for application behaviour via response
+- Find red, redirect, origin type of parameters and change their value to www.chintangurjar.com. Check for application behaviour via response
 - Local file inclusion ../../../etc/passwd or ..//..//..//..//etc/passwd use KALI's dotdotpwn.pl perl script for the same
 - Check for host header attack
 - Check for LDAP injection
