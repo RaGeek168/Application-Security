@@ -25,15 +25,16 @@ Description: This checklist will help security analyst/consultants to test their
 ##### (3) Session Management
 - Sensitive information disclosure/passing through cookie
 - Cookie without 'HttpOnly' flag
+- Implement absolute session timeout
 - Cookie without 'Secure' flag set
 - Check for Path attribute value for all domains & subdomains
 - Apache HttpOnly cookie disclosure
-- Session prediction/randomness checking
+- Ensure that session identifiers are sufficiently random
 - Session expiration
 - Check if session ID is required for all critical operation
 - Check for session cookie value pre and post login
 - Session overriding/hijacking
-- Check if session really expires post log out
+- Invalidate the session after logout
 
 ##### (4) Registration Process Testing
 - Check for userid enumeration
@@ -48,6 +49,8 @@ Description: This checklist will help security analyst/consultants to test their
 - Username enumeration
 - Bypass Authentication using SQL Injection
 - Credentials transmission over SSL or not?
+- Use TLS everywhere also disable HTTP for all TLS based tranmission
+- Use 2FA/MFA for critical financial functionalities
 - Account lockout
 - Check for 0Auth functionality
 - User credentials are stored in browser memory in clear text 
@@ -66,8 +69,12 @@ Description: This checklist will help security analyst/consultants to test their
 - Check for CSRF token bypass
 - Impersonate other user's account
 - Check account deletion functionality
+- Log all authentication logs/activities/privileged activities
+- Store user passwords using a strong, iterative, salted hash
+- Disable weak TLS ciphers on SSL/TLS certificate
+- Implement cache control mechanism and do not allow client browser to store sensitive data in cache
 
-##### (8) Post login 'My Profile/Account' Testing
+##### (8) Forgot Password Feature Testing
 - Username enumeration
 - Reset token key expiration time
 - Check if password getting changed over SSL or not
@@ -121,6 +128,8 @@ Description: This checklist will help security analyst/consultants to test their
 - Sensitive Information gets stored in History 
 - Oracle Padding attack ASPX
 - Find metadata within object see if potential information is disclosed or not
+- Harden the infrastructure on server side
+- Perform secure code review as pre-production engagement
 
 ##### (14) CAPTCHA Testing
 - Identify parameters which are used to send CAPTCHA
@@ -138,4 +147,5 @@ Description: This checklist will help security analyst/consultants to test their
 - Acunetix
 - IBM AppScan
 
-
+##### (16) References
+- https://software-security.sans.org/resources/swat (Suggested by NoahJaehnert)
