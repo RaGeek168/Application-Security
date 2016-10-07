@@ -3,7 +3,7 @@ Description: This checklist will help android developers to harden their applica
 
 ##### Encrypt shared preferences
   - Reference: https://github.com/scottyab/secure-preferences
-  
+
 ##### Avoid storing sensitive information withing shared preferences even if you are using encrypted shared preferences
 
 ##### Encrpyt SQLite database.
