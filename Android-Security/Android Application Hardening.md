@@ -25,4 +25,24 @@ Description: This checklist will help android developers to harden their applica
   - Do not share sensitive information on SD card which is publicly available even non-rooted devices.
   - If there is file upload mechanism then follow best practices for file upload on server side.
     - Upload feature testcases - http://apps.testinsane.com/mindmaps/Uploads/Upload.png
-  - Implement 2/3 minutes of throttling between two consecutive requests made to the server. It helps to avoid all security scanners that can be executed on your api server, backend web application
+  - Implement 2/3 minutes of throttling between two consecutive requests made to the server. It helps to avoid all security scanners that can be executed on your api server, backend web application.
+  - Do not store sensitive data in cache at client side.
+  - Enable local session timeout.
+    - User's account must ask for login on inactivity of 10 minutes. If user's mobile device is stolen/theft then this feature becomes handy to protect user's account and data being stolen/tampered.
+  - Disable debug logs
+  - Use secure settings for cookies
+  - Use tokens for account numbers instead of using account numbers directly which are pertaining to users.
+  - Avoid simple logic which can be easily guessable by an attackers.
+  - Disable clipboard copy paste
+  - Use latest and secure 3rd party libraries
+  - Implement file permissions carefully.
+    - Do not create files using MODE_WORLD_READABLE and MODE_WORLD_WRITABLE
+  - Implement content providers carefully.
+  - Implement best practices for webview access.
+    - Disable JavaScript access.
+    - Disable local file access.
+  - Disallow application to run post tamper detection. Log analystics on server side for further investigation.
+  - Implement 2FA for financial application if required.
+  - Validate all inputs from client side.
+  - API server must be over TLS 1.2 or later.
+  - Implement web services carefully and pentest it via 3rd party server.
