@@ -7,6 +7,7 @@
 
 #### Android-Security
   - Android application security assessment checklist
+  - Android application hardening controls
 
 ##### Changelog
  - Web application security checklist added under Web-Security folder
@@ -14,5 +15,5 @@
 ##### Author
  - Chintan Gurjar (@iamthefrogy)
  - Creation Date: 23 May 2016
- - Last modified Date: 23 May 2016
+ - Last modified Date: 10 Oct 2016
 
