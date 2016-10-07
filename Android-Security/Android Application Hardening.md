@@ -25,4 +25,4 @@ Description: This checklist will help android developers to harden their applica
 #### Do not share sensitive information on SD card which is publicly available even non-rooted devices.
 #### If there is file upload mechanism then follow best practices for file upload on server side.
   - Upload feature testcases - http://apps.testinsane.com/mindmaps/Uploads/Upload.png
-#### Implement 2/3 minutes of throttling between two consecutive requests made to the server. It helps to avoid all security scanners that can be executed on your api server, backend web application.
+#### Implement 2/3 minutes of throttling between two consecutive requests made to the server. It helps to avoid all security scanners that can be executed on your api server, backend web application
