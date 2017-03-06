@@ -1,4 +1,4 @@
-# Application-Security
+# Application-Security Checklist
 - Application security repositoriy consits all web & mobile security assessment checklists and cheatsheets to be used by security analysts & consultants on their client's application.
 
 #### Web-Security 
@@ -15,5 +15,4 @@
 ##### Author
  - Chintan Gurjar (@iamthefrogy)
  - Project Creation Date: 23 May 2016
- - Project Modification Date: 10 Oct 2016
-
+ - Project Modification Date: 06 Mar 2017
